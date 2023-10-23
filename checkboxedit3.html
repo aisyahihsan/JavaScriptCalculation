@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+// Created by: Jay Rumsey | http://www.nova.edu/~rumsey/
+// This script downloaded from JavaScriptBank.com
+
+function UpdateCost() {
+  var sum = 0;
+  var gn, elem;
+  
+  for (i=0; i<5; i++) {
+    gn = 'game'+i;
+    elem = document.getElementById(gn);
+    if (elem.checked == true) { sum += Number(elem.value); }
+  }
+  document.getElementById('totalcost').value = sum.toFixed(2);
+
+{  
+
+	if (document.form1.totalcost.value>3000)  
+	document.getElementById("test").value = 20;
+	else
+
+	if (document.form1.totalcost.value>499) 
+	document.getElementById("test").value = 10;  
+//document.getElementById("test").value = var2;
+	else  
+	if (document.form1.totalcost.value>0) 
+	document.getElementById("test").value = 5;
+	else
+	  document.getElementById("test").value = 0;
+//document.getElementById("test").value = "5";
+}
+} 
+</script>
+
+<script type="text/javascript">
+function marksgrade()  
+{  
+if (document.form1.totalcost.value>50)  
+alert('Marks is greater than 50.');  
+else  
+alert('Marks is less than or equal to 50.');  
+}  
+</script>
+
+
+
+</head>
+
+<body>
+
+<p>&nbsp;</p>
+<form id="form1" name="form1" method="post" action="">
+  <p>&nbsp;</p>
+  <table width="430" border="1">
+    <tr>
+      <td width="64"><input type="checkbox" id='game0' value="200"  onclick="UpdateCost()" /> 
+        tayar</td>
+      <td width="74"><input type="checkbox" id='game1' value="300" onclick="UpdateCost()" /> 
+        lampu</td>
+      <td width="144"><input type="checkbox" id='game2' value="400" onclick="UpdateCost()" />
+        tv</td>
+      <td width="23"><input type="checkbox" id='game3' value="500" onclick="UpdateCost()" /> 
+        gps</td>
+      <td width="91"><input type="checkbox" id='game4' value="3000" onclick="UpdateCost()" /> 
+        lock</td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><label>
+        <input type="text" name="test" id="test" />
+      </label>
+jumlah pos</td>
+      <td><p>
+        <input type="text" name="totalcost" id="totalcost" />
+      </p>
+        <label></label>
+jumlah berat </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p><br />
+    <br />
+    <br />
+    <br />
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <label></label>
+  </p>
+</form>
+<p><br>
+</p>
+</body>
+</html>

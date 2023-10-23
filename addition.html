@@ -1,0 +1,71 @@
+<html>
+<head>
+<title> -----  5 calc1------- </title>
+<SCRIPT  TYPE="text/javascript">
+<!--
+function doAdd()
+{
+var number1, number2, result;
+number1=parseFloat(myform.num1.value);
+number2=parseFloat(myform.num2.value);
+result = number1+number2;
+myform.result.value=result;
+}
+
+function doTolak()
+{
+var number1, number2, result;
+number1=parseFloat(myform.num1.value);
+number2=parseFloat(myform.num2.value);
+result = number1-number2;
+myform.result.value=result;
+}
+
+function doBAhagi()
+{
+var number1, number2, result;
+number1=parseFloat(myform.num1.value);
+number2=parseFloat(myform.num2.value);
+result = number1/number2;
+myform.result.value=result;
+}
+
+function doDarab()
+{
+var number1, number2, result;
+number1=parseFloat(myform.num1.value);
+number2=parseFloat(myform.num2.value);
+result = number1*number2;
+myform.result.value=result;
+}
+
+
+
+
+
+
+
+// -->
+</SCRIPT>
+</head>
+
+<body>
+<form name="myform"  method="post"  action="" >
+  <p>
+    <input type="text" name="num1">
+    <input type="text" name="num2">
+    <br>
+    <br>
+    <input type="button" name="Button1" value=" + " onClick="doAdd()">
+    <input type="button" name="Button2" value=" tolak " onClick="doTolak()">
+    <input type="button" name="Button3" value=" bahagi " onClick="doBAhagi()">
+    <input type="button" name="Button4" value=" darab " onClick="doDarab()">
+   </p>
+  <p>&nbsp;</p>
+  <p><br>
+    Result:
+    <input type="text" name="result">
+      </p>
+</form>
+</body>
+</html>

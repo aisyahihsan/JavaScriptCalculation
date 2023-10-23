@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>order form</title>
+
+<SCRIPT  TYPE="text/javascript">
+<!--
+function kirala()
+{
+var qty1, qty2, qty3,TotOrder,TotPayment;
+qty1=parseFloat(form1.q1.value);
+qty2=parseFloat(form1.q2.value);
+qty3=parseFloat(form1.q3.value);
+
+TotOrder = qty1+qty2+qty3;
+TotPayment = ((qty1*24)+(qty2*30)+(qty3*10));
+
+form1.totalOrder.value=TotOrder ;
+form1.totalPayment.value=TotPayment ;
+}
+</SCRIPT>
+
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <p>&nbsp;</p>
+  <table width="400" border="0" align="center">
+    <tr>
+      <th scope="col"><img src="../../../../xampp/htdocs/sourrabbit/images/rabbit.jpg" alt="a" width="225" height="141" /></th>
+    </tr>
+    <tr>
+      <th scope="row">order form</th>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="400" border="0" align="center">
+    <tr>
+      <th scope="col"><img src="../../../../xampp/htdocs/sourrabbit/images/gift4.png" alt="a" width="200" height="200" /></th>
+      <th scope="col"><img src="../../../../xampp/htdocs/sourrabbit/images/gift2.jpg" alt="a" width="200" height="200" /></th>
+      <th scope="col"><img src="../../../../xampp/htdocs/sourrabbit/images/gift3.jpg" alt="a" width="200" height="200" /></th>
+    </tr>
+    <tr>
+      <th scope="row"><div align="center"><strong>flower 1</strong></div></th>
+      <td><div align="center"><strong>box 1</strong></div></td>
+      <td><div align="center"><strong>box 2</strong></div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="center"><strong>price :RM 24</strong></div></th>
+      <td><div align="center"><strong>price :RM 30</strong></div></td>
+      <td><div align="center"><strong>price :RM10</strong></div></td>
+    </tr>
+    <tr>
+      <th scope="row">quantity 
+        <label>
+        <input name="q1" type="text" id="q1" size="10"  />
+      </label></th>
+      <td>quantity
+        <label>
+        <input name="q2" type="text" id="q2" size="10"  />
+        </label></td>
+      <td>quantity
+        <label>
+        <input name="q3" type="text" id="q3" size="10" />
+        </label></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="252" border="0" align="center">
+    <tr>
+      <th width="153" scope="col">Total order</th>
+      <th width="89" scope="col"><label>
+        <input type="text" name="totalOrder" id="totalOrder" />
+      </label></th>
+    </tr>
+    <tr>
+      <th scope="row">Total payment</th>
+      <td><label>
+        <input type="text" name="totalPayment" id="totalPayment" />
+      </label></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><input type="button" name="button" id="button" value="count" onclick="kirala()" /></th>
+    </tr>
+  </table>
+  <label></label>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</form>
+</body>
+</html>
